@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>老年健康资讯平台</title>
+    <link rel="stylesheet" type="text/css" href="css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style></style>
+</head>
+
+<body>
+  <div class="onloading">
+    <div class="loadingcs"><div class="loadingcs"></div></div>
+  </div>
+
+  <div class="topbar"> <a href="SouSuo.html"><img src="https://pic.imgdb.cn/item/663b21230ea9cb14032ffad2.png" class="indexinput"></a> <img src="https://pic.imgdb.cn/item/663b21230ea9cb14032ffa8c.png" class="meaubutton"></div>
+  <div class="indextitlecard"> <img src="https://pic.imgdb.cn/item/660a8e629f345e8d03650121.png" class="index_titlecard"> </div>
+  <div class="popup"> 
+    <div class="popupmeau">
+      <div class="popuptab"><a href="DengLu.html"><img src="https://pic.imgdb.cn/item/663b28300ea9cb14033cc298.png" class="signin"></a> <img src="https://pic.imgdb.cn/item/663b28170ea9cb14033c9c0f.png" class="closebutton"></div>
+        <div class="meautitle">
+          <a href="index.html">首页</a>
+          <a href="DongtaiIndex.html">动态发现</a>
+          <a href="JianKangIndex.html">健康问答</a>
+          <a href="XiaoXi.html">消息</a>
+          <a href="WoDe.html">我的</a>
+        </div>
+      </div>
+    </div>
+
+  <div class="indexslideshow">
+    <ul>
+      <li><div><a href="lunbopage3.html"><img src="https://pic.imgdb.cn/item/66165c5368eb93571377e471.png"></a></li>
+      <li><a href="lunbopage1.html"><img src="https://pic.imgdb.cn/item/66165c5268eb93571377dd25.png"></a></li>
+      <li><a href="lunbopage2.html"><img src="https://pic.imgdb.cn/item/66165c5268eb93571377e0ce.png"></a></li>
+      <li><a href="lunbopage3.html"><img src="https://pic.imgdb.cn/item/66165c5368eb93571377e471.png"></a></li>
+      <li><a href="lunbopage1.html"><img src="https://pic.imgdb.cn/item/66165c5268eb93571377dd25.png"></a></li>
+    </ul>
+    <ol>
+      <li class="slidedot"></li>
+      <li></li>
+      <li></li>
+  </ol>
+  </div>
+  <div class="indextitlecard"> <img src="https://pic.imgdb.cn/item/660a8e629f345e8d03650178.png" class="index_titlecard"> </div>
+
+  <script type="text/javascript">
+    document.onreadystatechange=function(){
+      if(document.readyState=="complete"){
+        document.querySelector(".onloading").style.display="none";
+      }else{
+        document.querySelector(".onloading").style.display="block";
+      }
+    }
+
+    window.addEventListener('load', function () {
+      var slideshows = document.querySelector('.indexslideshow');
+      var ul = slideshows.children[0];
+      var ol = slideshows.children[1];
+      var showswidth = slideshows.offsetWidth;
+      var index = 0;
+      
+      var timer = setInterval(function () {
+        index++;
+        var translatex = -index * showswidth;
+        ul.style.transition = 'all .3s';
+        ul.style.transform = 'translateX(' +translatex+ 'px)';
+      }, 3000);
+    
+      
+        document.querySelector(".meaubutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="flex"
+            document.querySelector("body").style.overflow="hidden"
+        })
+
+        document.querySelector(".closebutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none"
+            document.querySelector("body").style.overflow="visible"
+        })
+    
+      
+    ul.addEventListener('transitionend', function () {
+      if (index >=3) {
+          index = 0;
+          ul.style.transition = 'none';
+          var translatex = -index * showswidth;
+          ul.style.transform = 'translateX(' + translatex + 'px)';
+      } else if (index < 0) {
+        index = 2;
+        ul.style.transition = 'none';
+        var translatex = -index * showswidth;
+        ul.style.transform = 'translateX(' + translatex + 'px)';
+        }
+
+        ol.querySelector('.slidedot').classList.remove('slidedot');
+        ol.children[index].classList.add('slidedot');
+    })
+
+  var startpositon = 0;
+  var endpositon = 0;
+  var fingermove = false;
+  ul.addEventListener('touchstart', function (e) {
+    startpositon = e.targetTouches[0].pageX;
+    clearInterval(timer);
+  })
+  
+  ul.addEventListener('touchmove', function (e) {
+    fingermove = true; 
+    endpositon = e.targetTouches[0].pageX - startpositon;
+    var translatex = -index * showswidth + endpositon;
+    ul.style.transition = 'none';
+    ul.style.transform = 'translateX(' + translatex + 'px)';  
+    e.preventDefault(); 
+  })
+
+  ul.addEventListener('touchend', function (e) {
+    if (fingermove=true) {
+      if (Math.abs(endpositon) > 50) {
+        if (endpositon > 0) {
+            index--;
+        } else {
+            index++;
+        }
+        var translatex = -index * showswidth;
+        ul.style.transition = 'all .3s';
+        ul.style.transform = 'translateX(' + translatex + 'px)';
+      } else {
+      var translatex = -index * showswidth;
+      ul.style.transition = 'all .1s';
+      ul.style.transform = 'translateX(' + translatex + 'px)';
+      }
+    }
+    
+      timer = setInterval(function () {
+      index++;
+      var translatex = -index * showswidth;
+      ul.style.transition = 'all .3s';
+      ul.style.transform = 'translateX(' + translatex + 'px)';
+      }, 3000);
+    })
+  })
+  </script>
+
+ 
+  <div class="indexcards">
+      <div class="indexcard" >
+        <a href="readpage1.html"><img src="https://pic.imgdb.cn/item/66165c5068eb93571377d37f.png">
+            <p class="indexcardtitle">了解心脏病预防的小知识</p>
+            <p class="indexcardout">健康中国  2024-03-11</p>
+        </a>
+        <!-- <img src="images/index-shoucang.png" class="indexcardshoucang"> -->
+        <!-- <p class="indexcardcorner">
+          <span style="margin-right: 2vw;"> <img src="logo/chakan.svg" style="margin-right: 1vw;">123</span> 
+          <span> <img src="logo/dianzan.svg" style="margin-right: 1vw;">169 </span>
+        </p> -->
+      </div>
+
+      <div class="indexcard">
+        <a href="readpage2.html"><img src="https://pic.imgdb.cn/item/66165c5168eb93571377d6c4.png">
+            <p class="indexcardtitle">抗生素的使用问题与解答</p>
+            <p class="indexcardout">医学动态  2024-03-11</p>
+        </a>
+        
+      </div>
+
+      <div class="indexcard">
+        <a href="readpage3.html"><img src="https://pic.imgdb.cn/item/660b55e19f345e8d0357c9b5.png">
+            <p class="indexcardtitle">高血压的症状和原因</p>
+            <p class="indexcardout">健康中国  2024-03-11</p>
+        </a>
+        
+      </div>
+
+      <div class="indexcard">
+        <a href="readpage4.html"><img src="https://pic.imgdb.cn/item/660b55e29f345e8d0357cb95.png">
+            <p class="indexcardtitle">科学预防脑卒中</p>
+            <p class="indexcardout">医学动态  2024-03-11</p>
+        </a>
+        
+      </div>
+
+  </div>
+
+<div class="bottomtext">暂无更多内容</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>老年健康资讯平台</title>
+    <link rel="stylesheet" type="text/css" href="css/adapter.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/XiaoXi.css">
+    
+    <style></style>
+</head>
+
+<body>
+  <div class="onloading"><div class="loadingcs"></div></div>
+  <div class="topbar"> <img src="https://pic.imgdb.cn/item/663b21230ea9cb14032ffa8c.png" class="meaubutton"></div>
+  
+  <div class="popup"> 
+    <div class="popupmeau">
+      <div class="popuptab"><img src="https://pic.imgdb.cn/item/663b28300ea9cb14033cc298.png" class="signin"> <img src="https://pic.imgdb.cn/item/663b28170ea9cb14033c9c0f.png" class="closebutton"></div>
+        <div class="meautitle">
+          <a href="index.html">首页</a>
+          <a href="DongtaiIndex.html">动态发现</a>
+          <a href="JianKangIndex.html">健康问答</a>
+          <a href="XiaoXi.html">消息</a>
+          <a href="WoDe.html">我的</a>
+        </div>
+      </div>
+  </div>
+
+  <div class="tixing">
+    <div class="tixingleft">
+      <img src="https://pic.imgdb.cn/item/663b28170ea9cb14033c9c0f.png"> <p>登录账号，接收通知</p>
+    </div>
+    <img src="https://pic.imgdb.cn/item/663b28300ea9cb14033cc298.png" class="tixingright">
+  </div>
+  
+
+  <div class="List">
+    <div class="ListItem" style="margin-right:10.6vw;">
+      <img src="https://pic.imgdb.cn/item/663f53440ea9cb1403247e35.png">
+      <p>回复</p>
+    </div>
+
+    
+      <div class="ListItem" style="margin-right:10.6vw;">
+        <img src="https://pic.imgdb.cn/item/663f53440ea9cb1403247e54.png">
+        <p>点赞</p>
+      </div>
+    
+
+    
+      <div class="ListItem" style="margin-right:10.6vw;">
+        <img src="https://pic.imgdb.cn/item/663f53440ea9cb1403247e96.png">
+        <p>粉丝</p>
+      </div>
+    
+
+    
+      <div class="ListItem">
+        <img src="https://pic.imgdb.cn/item/663f53440ea9cb1403247df5.png">
+        <p>通知</p>
+      </div>
+    
+  </div>
+
+  <div class="bottom">
+    <img src="https://pic.imgdb.cn/item/663f571c0ea9cb14032bf789.png">
+    <p>暂时没有收到消息</p>
+  </div>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  <script type="text/javascript">
+        document.onreadystatechange=function(){
+      if(document.readyState=="complete"){
+        document.querySelector(".onloading").style.display="none";
+      }else{
+        document.querySelector(".onloading").style.display="block";
+      }
+    };
+
+        document.querySelector(".meaubutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="flex"
+            document.querySelector("body").style.overflow="hidden"
+        })
+
+        document.querySelector(".closebutton").addEventListener("click",function(){
+            document.querySelector(".popup").style.display="none"
+            document.querySelector("body").style.overflow="visible"
+        })
+  </script>
+
+</body>
+
+</html>
