@@ -1,0 +1,175 @@
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18vw;
+    z-index: 10;  
+    background-color: #F6F8FD;
+    display: flex;
+    justify-content:start;
+}
+
+.iconback{
+    height: 16vw;
+    width: auto;
+    margin-left: 5vw;
+    margin-top: 3vw;  
+}
+
+
+.topbar p{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    line-height: 19pt;
+    font-size: 19pt;
+    margin-left: 20vw;
+    width: auto;
+    letter-spacing:2pt;
+    color: #000000;  
+}
+/* 总体字体-------------------------- */
+.title{
+    font-size: 19pt;
+    letter-spacing:2pt;
+    line-height: 38pt;
+}
+.annotion{
+    font-size: 15pt;
+    letter-spacing:1.6pt;
+    color: #545454; 
+}
+
+/* 顶部信息-------------------------- */
+.top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 20vw;
+}
+
+.top .touxiang{
+    width: 25vw;
+    height: auto;
+    margin: 0 auto;
+}
+
+.top div{
+    display: flex;
+    margin: 0 auto;
+    height: 12vw;
+}
+
+.top div img{
+    height: 8vw;
+    width: auto;
+    margin-left: 3vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* 底部简介-------------------------- */
+.middle{
+    display: flex;
+    flex-direction: column;
+    width: 92vw;
+    margin-left: 5vw;
+    margin-bottom: 10vw;
+}
+
+.middle div{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    width: 92vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.upboy{
+    width: 98vw;
+    position: relative;
+    left: 1vw;
+    margin-top: 2vw;
+}
+
+.upboy p{
+    top: 1vw;
+    left: 14vw;
+    position: absolute;
+    font-size: 15pt;
+    font-weight: 300;
+    letter-spacing:1.6pt;
+    color: #545454;
+}
+
+.unittitle {
+    left: 5vw;
+    width: 90vw;
+    
+}
+.unittitle h1{
+    font-size: 22pt;
+    letter-spacing:2.4pt;
+    color: #3C53CF;
+    padding-top: 5vw; 
+}
+
+p{
+    font-size: 19pt;
+    margin: 0;
+    
+}
+
+.popbox p{
+    padding-right:2vw;
+    
+}
+
+
+.bottomtext{
+    text-align: center;
+    font-size: 14pt;
+    color: #545454;
+    padding-bottom: 20vw;
+    width: 90vw;
+    left: 5vw;
+    line-height: 30pt;
+    letter-spacing:2pt;
+}
+
+
+
+
+
+
+.backbutton{
+    width: 14vw;
+    height: auto;
+    position: absolute;
+    left: 5vw;
+    top: 5vw;
+    z-index: 10; 
+}
+
+

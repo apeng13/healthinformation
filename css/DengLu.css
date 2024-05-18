@@ -1,0 +1,121 @@
+/* 顶部导航--------------------------------------------------------- */
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7.5vh;
+    z-index: 10;  
+    background-color: #F6F8FD;
+    display: flex;
+    justify-content:start;
+}
+
+.iconback{
+    height: 16vw;
+    width: auto;
+    margin-left: 5vw;
+    margin-top: 3vw;  
+}
+
+.topbar p{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    line-height: 19pt;
+    font-size: 19pt;
+    margin-left: 20vw;
+    width: auto;
+    letter-spacing:2pt;
+    color: #000000;  
+}
+.body1{
+    height: 80vh;
+    width: 100%;
+
+}
+
+/* 小字体总体样式--------------------------------------------------------- */
+p{
+    font-size: 14pt;
+    letter-spacing:1.4pt;
+    line-height: 26pt;
+    color: #545454;
+}
+
+/* 中部内容1-------------------------------------------------------- */
+.indexcard1{
+    margin-top: 26vw;
+    width: 96vw;
+    height: auto;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* 中部内容2-------------------------------------------------------- */
+.indexcard2{
+    margin-top: 22vw;
+    width: 96vw;
+    height: auto;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button{
+    width: 90vw;
+    height: auto;
+    left: 3vw;
+    border-radius: 10px;
+    background-color:#7086FF ;
+}
+
+.button p{
+    width: 90vw;
+    font-size: 16pt;
+    letter-spacing:1.6pt;
+    line-height: 26pt;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+/* 中部内容3-------------------------------------------------------- */
+.indexcard3{
+    width: 90vw;
+    height: auto;
+    left: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30vw;
+}
+
+.indexcard3 div{
+    width: 4vw;
+    height: 4vw;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #545454;
+    margin-top: 1vh;
+}
+
+.indexcard3 p{
+    margin-left: 2vw;
+    width: 83vw;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* 中部内容4-------------------------------------------------------- */
+.indexcard4{
+    width: 90vw;
+    height: auto;
+    left: 5vw;
+    text-align: center;
+    margin-top: 0vw;
+
+}

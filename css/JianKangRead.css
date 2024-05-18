@@ -1,0 +1,223 @@
+/* 顶部导航--------------------------------------------------------- */
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18vw;
+    z-index: 10;  
+    background-color: #F6F8FD;
+    display: flex;
+    justify-content:start;
+}
+
+.iconback{
+    height: 16vw;
+    width: auto;
+    margin-left: 5vw;
+    margin-top: 3vw;  
+}
+
+.topbar p{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    line-height: 19pt;
+    font-size: 19pt;
+    margin-left: 20vw;
+    width: auto;
+    letter-spacing:2pt;
+    color: #000000;  
+}
+p{
+    font-size: 19pt;
+    margin: 0;
+    
+}
+/* 中部内容--------------------------------------------------------- */
+/* 中部内容-总体-------------------------------------------------------- */
+.indexcard{
+    margin-top: 18vw;
+    width: 96vw;
+    height: auto;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4vw;
+    border-radius: 10px;
+
+}
+/* 中部内容-顶部-------------------------------------------------------- */
+.cardtop{ 
+    top:3vw;
+    width: 96vw;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    
+}
+
+.cardtop img{
+    height: 10vw;
+    width: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.guanzhu{
+    display: flex;
+    flex-direction: column;
+}
+
+.guanzhu p{
+    margin-top: 3vw;
+    margin-bottom: 2vw;
+    font-size: 15pt;
+    width: 80vw;
+    letter-spacing:1.6pt;
+    color: #545454;
+}
+
+.guanzhu .title{
+    width: 80vw;
+    font-size: 19pt;
+    letter-spacing:2pt;
+    font-weight: 700;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: #3C53CF;
+}
+
+/* 中部内容-中部-------------------------------------------------------- */
+.cardcenter{
+    margin-top:4vw;
+    width: 96vw;
+    
+}
+
+.cardcenter p{
+    width: 90vw;
+    line-height: 38pt;
+    font-size: 19pt;
+    letter-spacing:2pt;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+}
+
+
+
+/* 底部-------------------------- */
+.pinglun{
+    width: 96vw;
+    height: auto;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -3vw;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding-bottom: 3VW;   
+}
+
+.pingluninner{
+    display: flex;
+    width: 90vw;
+    margin-top: 3vw; 
+}
+.pingluninner a{
+    text-decoration: none;
+    color: inherit;  
+}
+
+
+.pingluninner img{
+    height: 10vw;
+    width: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.pingluninnerrignt{
+    display: flex;
+}
+
+.pingluninnerrignt img{
+    height: 13vw;
+    width: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 0vw;
+    margin-right: 3vw;
+}
+
+.plrignttop{
+    display: flex;
+    flex-direction: column; 
+    width: auto;
+    width: 61vw;
+}
+
+.plrignttop p{
+    font-size: 14pt;
+    font-weight: 300;
+    line-height: 7.5vw;
+    letter-spacing:1.6pt;
+    color: #545454;
+ 
+ 
+}
+
+.annotion{
+    font-size: 15pt;
+    font-weight: 300;
+    letter-spacing:1.6pt;
+    color: #545454; 
+}
+
+.dafu p{
+    width: 92vw;
+    line-height: 38pt;
+    font-size: 19pt;
+    letter-spacing:2pt;
+    margin-top: 2vw;
+    margin-bottom: 1vw;
+    margin-left: 3vw;
+}
+
+
+.bottomtext{
+    text-align: center;
+    font-size: 14pt;
+    color: #7086FF;
+    margin-top: 6vw;
+    padding-bottom:6vw;
+    width: 90vw;
+    left: 5vw;
+    line-height: 30pt;
+    letter-spacing:2pt;
+}
+
+
+
+
+
+
+
+
+.backbutton{
+    width: 14vw;
+    height: auto;
+    position: absolute;
+    left: 5vw;
+    top: 5vw;
+    z-index: 10; 
+}
+
+
