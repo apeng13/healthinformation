@@ -43,8 +43,25 @@ p{
 }
 
 /* 中部内容1-------------------------------------------------------- */
+.logotu{
+    margin-top: 20vw;
+    width: 96vw;
+    height: auto;
+    left: 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logotu img{
+    width: 30vw;
+    height:auto;
+    margin-left: 33vw;
+    
+}
+
 .indexcard1{
-    margin-top: 26vw;
+    margin-top: 10vw;
     width: 96vw;
     height: auto;
     left: 2vw;
@@ -55,7 +72,7 @@ p{
 
 /* 中部内容2-------------------------------------------------------- */
 .indexcard2{
-    margin-top: 22vw;
+    margin-top: 8vw;
     width: 96vw;
     height: auto;
     left: 2vw;
@@ -90,7 +107,7 @@ p{
     left: 5vw;
     display: flex;
     justify-content: flex-start;
-    margin-top: 30vw;
+    margin-top: 8vw;
 }
 
 .indexcard3 div{
